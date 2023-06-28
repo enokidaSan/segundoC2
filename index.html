@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>alurabooks</title>
+</head>
+<body>
+  <header class="cabecalho">
+   <div class="container">
+      <input type="checkbox" id="menu" class="container_botao">
+      <label for="menu">
+      <span class="cabecalho__menu-hunburger container_image"></span>
+      </label>
+      <ul class="lista-menu">
+      <li class="lista-menu_titulo">categoria</li>
+      <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">programação</a>
+      </li>
+      <li class="lista-menu_item"> 
+          <a href="#" class="lista-menu_link">front-end</a>
+      </li>
+      <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">infraestrutura</a>
+      </li>
+      <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">business</a>
+      </li>
+      <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">desing & UX</a>
+      </li>
+    
+    </ul>
+  
+    <img src="img/Logo.svg" alt="logo"class="container__menu-hungurger">
+</div>
+<div class="container">
+    <a href="#"><img src="img/Favoritos.svg" alt="legal" class="container_image"></a>
+    <a href="#"><img src="img/Compras.svg" alt="carrinho de putas" class="container_image"></a>
+    <a href="#"><img src="img/Usuario.svg" alt="putinha da loja" class="container_image"></a>
+</div>
+  </header>
+  <section class="banner">
+    <h2 class="banner_titulo">you now how to start?</h2>
+    <p class="banner_texto"> estante foda com muito conhecimento</p>
+    <input type="search" class="banner_pesquisa" placeholder="qual sera o livro?">
+  </section>
+
+<section class="swiper">
+    <h2 class="carrossel_titulo">novo lançamentos</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+     
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro legal"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro do hitler"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="codigo foda"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="front-end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="portugal"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="deficientes"></div>
+    </div>
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper',{
+        spacebetween: 10,
+        slidesperview: 3,
+        pagination: {
+        el: '.swiper-pagination',    
+        type: '.bullets',    
+    }
+    });   
+    </script>
+</body>
+</html>
